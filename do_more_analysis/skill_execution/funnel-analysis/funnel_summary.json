@@ -1,0 +1,25 @@
+{
+  "analysis_date": "2025-12-24T10:12:21.050902",
+  "funnel_stages": {
+    "Order Created": 99441,
+    "Order Approved": 99281,
+    "Shipped to Carrier": 97658,
+    "Delivered to Customer": 96476
+  },
+  "conversion_rates": {
+    "stage_1_to_2": 99.83910057219859,
+    "stage_2_to_3": 98.36524611959993,
+    "stage_3_to_4": 98.78965368940588
+  },
+  "overall_conversion_rate": 97.01833247855512,
+  "order_status_distribution": {
+    "delivered": 96478,
+    "shipped": 1107,
+    "canceled": 625,
+    "unavailable": 609,
+    "invoiced": 314,
+    "processing": 301,
+    "created": 5,
+    "approved": 2
+  }
+}

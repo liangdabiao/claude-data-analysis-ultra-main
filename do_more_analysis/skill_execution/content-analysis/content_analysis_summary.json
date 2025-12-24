@@ -1,0 +1,55 @@
+{
+  "analysis_date": "2025-12-24T10:15:40.039863",
+  "total_reviews": 99224,
+  "avg_score": 4.08642062404257,
+  "sentiment_distribution": {
+    "positive": 76470,
+    "neutral": 8179,
+    "negative": 14575
+  },
+  "reviews_with_comments": 42568,
+  "comment_rate": 42.90091106990244,
+  "avg_response_time_days": 3.1489933993110615,
+  "top_keywords": [
+    [
+      "produto",
+      19718
+    ],
+    [
+      "não",
+      11471
+    ],
+    [
+      "muito",
+      8817
+    ],
+    [
+      "prazo",
+      8625
+    ],
+    [
+      "que",
+      8372
+    ],
+    [
+      "entrega",
+      7059
+    ],
+    [
+      "recomendo",
+      6407
+    ],
+    [
+      "com",
+      5956
+    ],
+    [
+      "bom",
+      5922
+    ],
+    [
+      "antes",
+      5691
+    ]
+  ]
+}

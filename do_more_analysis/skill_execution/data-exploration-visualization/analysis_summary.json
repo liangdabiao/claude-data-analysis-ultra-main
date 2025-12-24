@@ -1,0 +1,76 @@
+{
+  "analysis_timestamp": "2025-12-24 09:47:14",
+  "dataset": "Orders.csv",
+  "total_orders": 99441,
+  "data_quality": {
+    "total_columns": 8,
+    "missing_values": 4908,
+    "duplicate_rows": 0
+  },
+  "order_status_distribution": {
+    "delivered": 97.02034372140264,
+    "shipped": 1.1132229161010045,
+    "canceled": 0.6285133898492574,
+    "unavailable": 0.6124234470691163,
+    "invoiced": 0.3157651270602669,
+    "processing": 0.3026920485514023,
+    "created": 0.005028107118794059,
+    "approved": 0.0020112428475176232
+  },
+  "delivery_performance": {
+    "avg_delivery_days": 12.094510551847092,
+    "median_delivery_days": 10.0,
+    "avg_estimated_days": 23.40435031827918,
+    "late_delivery_rate": 7.348075743405638
+  },
+  "temporal_patterns": {
+    "date_range": {
+      "start": "2016-09-04",
+      "end": "2018-10-17"
+    },
+    "peak_months": [
+      [
+        [
+          2017,
+          11
+        ],
+        7544
+      ],
+      [
+        [
+          2018,
+          1
+        ],
+        7269
+      ],
+      [
+        [
+          2018,
+          3
+        ],
+        7211
+      ],
+      [
+        [
+          2018,
+          4
+        ],
+        6939
+      ],
+      [
+        [
+          2018,
+          5
+        ],
+        6873
+      ]
+    ]
+  },
+  "key_insights": [
+    "数据集包含 99,441 个订单记录",
+    "主要订单状态: 96478 个已交付订单 (97.0%)",
+    "平均配送时间: 12.1 天",
+    "延迟配送率: 7.3%",
+    "准时配送率: 92.7%"
+  ]
+}

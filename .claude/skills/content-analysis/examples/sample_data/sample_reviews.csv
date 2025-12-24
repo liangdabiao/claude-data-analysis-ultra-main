@@ -1,0 +1,21 @@
+text,sentiment,category,source,date
+"I absolutely love this new smartphone! The camera quality is amazing and the battery life is incredible.",positive,Product,Review,2024-01-15
+"The customer service was excellent. They resolved my issue quickly and professionally.",positive,Service,Review,2024-01-16
+"This product is terrible. It broke after just one week of use.",negative,Product,Review,2024-01-17
+"Good value for money. The product meets my expectations but doesn't exceed them.",neutral,Product,Review,2024-01-18
+"Outstanding quality and attention to detail. Highly recommend this brand!",positive,Product,Review,2024-01-19
+"Poor packaging and the item arrived damaged. Very disappointed with the experience.",negative,Shipping,Review,2024-01-20
+"The user interface is intuitive and easy to navigate. Great user experience!",positive,Product,Review,2024-01-21
+"Average quality at best. There are better alternatives available in this price range.",negative,Product,Review,2024-01-22
+"Fast shipping and secure packaging. Product arrived in perfect condition.",positive,Shipping,Review,2024-01-23
+"Terrible customer support. Waited on hold for over an hour and then got disconnected.",negative,Service,Review,2024-01-24
+"The laptop performance is outstanding for gaming. No lag whatsoever!",positive,Product,Review,2024-01-25
+"Mediocre build quality. Expected more for this premium price point.",negative,Product,Review,2024-01-26
+"Great warranty coverage and excellent after-sales support. Peace of mind purchase.",positive,Service,Review,2024-01-27
+"The delivery was delayed by a week without any communication.",negative,Shipping,Review,2024-01-28
+"Solid product with good features. Meets my daily needs perfectly.",positive,Product,Review,2024-01-29
+"Difficult setup process and unclear instructions. Frustrating experience.",negative,Product,Review,2024-01-30
+"Responsive customer service team that really cares about customer satisfaction.",positive,Service,Review,2024-01-31
+"The product quality is okay but the price is too high for what you get.",negative,Product,Review,2024-02-01
+"Eco-friendly packaging and fast delivery. Love the sustainable approach!",positive,Shipping,Review,2024-02-02
+"Technical support was very knowledgeable and patient. Solved my complex issue.",positive,Service,Review,2024-02-03

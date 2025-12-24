@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-12-20 00:25:14",
+  "data_summary": {
+    "total_customers": 21,
+    "total_orders": "Unknown",
+    "date_range": [
+      "2022-06-01",
+      "2022-06-25"
+    ],
+    "avg_ltv": 357.4047619047619,
+    "median_ltv": 301.0
+  },
+  "model_summary": {
+    "best_model": "random_forest",
+    "best_r2_score": 0.48296743825855337,
+    "best_mae": 114.6276462585034,
+    "best_rmse": 157.18971424672202,
+    "best_mape": 19.351985948660396
+  },
+  "feature_summary": {
+    "most_important_feature": "Unknown",
+    "feature_importance": {
+      "M值": 0.9822450117626177,
+      "F值": 0.010390131073788061,
+      "R值": 0.0073648571635942794
+    }
+  },
+  "segment_summary": {
+    "segment_counts": {
+      "铜牌客户": 5,
+      "金牌客户": 5,
+      "银牌客户": 4,
+      "钻石客户": 4,
+      "白金客户": 3
+    },
+    "high_value_customers": "7"
+  },
+  "recommendations_summary": [
+    "模型预测性能一般，建议增加更多特征数据或尝试其他算法",
+    "样本量较少，建议积累更多数据以提高模型稳定性"
+  ],
+  "generated_files": {
+    "charts": {},
+    "reports": {}
+  }
+}

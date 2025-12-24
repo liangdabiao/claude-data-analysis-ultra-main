@@ -1,0 +1,5 @@
+﻿Stage,Orders,Cumulative_Percent,Stage_Conversion_Percent
+Order Created,99441,100.0,100.0
+Order Approved,99281,99.83910057219859,99.83910057219859
+Shipped to Carrier,97658,98.20697700143803,98.36524611959993
+Delivered to Customer,96476,97.01833247855512,98.78965368940588

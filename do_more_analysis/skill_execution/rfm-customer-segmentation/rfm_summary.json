@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-12-24T09:56:41.591805",
+  "total_customers": 96478,
+  "segments": {
+    "Potential_Customers": {
+      "count": 32997,
+      "avg_monetary": 121.78576325120466,
+      "total_revenue": 4018564.83,
+      "avg_recency": 279.9227202472952,
+      "avg_frequency": 1.0
+    },
+    "Regular_Customers": {
+      "count": 13653,
+      "avg_monetary": 65.5872225884421,
+      "total_revenue": 895462.3500000001,
+      "avg_recency": 363.22683659269023,
+      "avg_frequency": 1.0
+    },
+    "Loyal_Customers": {
+      "count": 32974,
+      "avg_monetary": 188.69745011220962,
+      "total_revenue": 6222109.72,
+      "avg_recency": 197.57966882998727,
+      "avg_frequency": 1.0
+    },
+    "At_Risk_Customers": {
+      "count": 1551,
+      "avg_monetary": 42.81148291424886,
+      "total_revenue": 66400.60999999999,
+      "avg_recency": 455.5744680851064,
+      "avg_frequency": 1.0
+    },
+    "VIP_Clients": {
+      "count": 15303,
+      "avg_monetary": 275.5823198065739,
+      "total_revenue": 4217236.24,
+      "avg_recency": 114.30066000130694,
+      "avg_frequency": 1.0
+    }
+  },
+  "key_metrics": {
+    "total_revenue": 15419773.75,
+    "avg_customer_value": 159.82683876116835,
+    "avg_frequency": 1.0,
+    "avg_recency": 240.12186197889673
+  }
+}

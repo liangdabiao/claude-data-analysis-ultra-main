@@ -1,0 +1,3 @@
+﻿Model,Train_R2,Test_R2,Train_RMSE,Test_RMSE,Train_MAE,Test_MAE
+Linear Regression,1.0,1.0,0.0,0.0,0.0,0.0
+Random Forest,1.0,1.0,0.0,0.0,0.0,0.0

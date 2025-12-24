@@ -1,0 +1,21 @@
+{
+  "analysis_date": "2025-12-24T10:17:41.206302",
+  "skills_executed": [
+    "eda",
+    "rfm",
+    "ltv",
+    "retention",
+    "funnel",
+    "growth",
+    "content"
+  ],
+  "total_skills": 7,
+  "key_findings": {
+    "total_orders": 99441,
+    "total_revenue": 15419773.749999998,
+    "total_customers": 96478,
+    "repeat_purchase_rate": 0.0,
+    "conversion_rate": 97.01833247855512,
+    "avg_review_score": 4.08642062404257
+  }
+}

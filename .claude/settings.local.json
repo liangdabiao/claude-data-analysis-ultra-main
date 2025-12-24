@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Skill(*)",
+      "Bash(tree customer_segmentation_analysis)",
+      "Skill(funnel-analysis)",
+      "Skill(content-analysis)",
+      "Skill(recommender-system)",
+      "Skill(growth-model-analyzer)",
+      "Skill(rfm-customer-segmentation)",
+      "Skill(ltv-predictor)",
+      "Skill(retention-analysis)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

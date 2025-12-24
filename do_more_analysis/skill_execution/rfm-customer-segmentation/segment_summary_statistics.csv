@@ -1,0 +1,6 @@
+segment,count,avg_recency,avg_frequency,avg_monetary,total_revenue
+At_Risk_Customers,1551,455.57,1.0,42.81,66400.61
+Loyal_Customers,32974,197.58,1.0,188.7,6222109.72
+Potential_Customers,32997,279.92,1.0,121.79,4018564.83
+Regular_Customers,13653,363.23,1.0,65.59,895462.35
+VIP_Clients,15303,114.3,1.0,275.58,4217236.24

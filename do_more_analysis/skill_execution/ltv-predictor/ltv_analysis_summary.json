@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-12-24T10:03:57.114370",
+  "total_customers": 33245,
+  "feature_period": {
+    "start": "2016-09-15",
+    "end": "2017-11-16"
+  },
+  "prediction_period": {
+    "start": "2017-11-16",
+    "end": "2018-08-29"
+  },
+  "models": {
+    "Linear Regression": {
+      "test_r2": 1.0,
+      "test_rmse": 0.0,
+      "test_mae": 0.0
+    },
+    "Random Forest": {
+      "test_r2": 1.0,
+      "test_rmse": 0.0,
+      "test_mae": 0.0
+    }
+  },
+  "best_model": "Linear Regression",
+  "key_metrics": {
+    "avg_ltv": 0.0,
+    "median_ltv": 0.0,
+    "total_ltv": 0.0,
+    "customers_with_future_purchases": 0
+  },
+  "feature_importance": {
+    "recency": 0.0,
+    "frequency": 0.0,
+    "monetary": 0.0,
+    "log_monetary": 0.0,
+    "log_frequency": 0.0,
+    "R_score": 0.0,
+    "F_score": 0.0,
+    "M_score": 0.0
+  }
+}
