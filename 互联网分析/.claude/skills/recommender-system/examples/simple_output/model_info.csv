@@ -1,0 +1,2 @@
+﻿user_count,item_count,matrix_sparsity,user_cf_trained,item_cf_trained,svd_trained,svd_components
+12,53,0.9072327044025157,True,True,True,20

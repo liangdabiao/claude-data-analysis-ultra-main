@@ -1,0 +1,139 @@
+{
+  "timestamp": "2025-12-20 00:25:00",
+  "config": {
+    "data_processor_config": {
+      "feature_period_months": 3,
+      "prediction_period_months": 6,
+      "remove_outliers": false,
+      "min_orders_per_customer": 1
+    },
+    "regression_config": {
+      "test_size": 0.3,
+      "cv_folds": 3,
+      "scoring_metric": "r2",
+      "enable_hyperparameter_tuning": false
+    },
+    "feature_columns": [
+      "R值",
+      "F值",
+      "M值"
+    ],
+    "target_column": "年度LTV",
+    "models_to_train": [
+      "linear_regression"
+    ],
+    "customer_column": "用户码"
+  },
+  "data_summary": {
+    "total_customers": 21,
+    "date_range": [
+      "2022-06-01",
+      "2022-06-25"
+    ],
+    "rfm_statistics": {
+      "R值": {
+        "mean": 73.95238095238095,
+        "median": 73.0,
+        "std": 5.472441781108233,
+        "min": "68",
+        "max": "88"
+      },
+      "F值": {
+        "mean": 2.3333333333333335,
+        "median": 2.0,
+        "std": 0.9128709291752769,
+        "min": "1",
+        "max": "4"
+      },
+      "M值": {
+        "mean": 357.4047619047619,
+        "median": 301.0,
+        "std": 185.50691490127926,
+        "min": 156.0,
+        "max": 753.0
+      },
+      "年度LTV": {
+        "mean": 357.4047619047619,
+        "median": 301.0,
+        "std": 185.50691490127926,
+        "min": 156.0,
+        "max": 753.0
+      }
+    },
+    "high_value_customers": {
+      "top_10_percent_threshold": 669.0,
+      "count": 3
+    }
+  },
+  "model_summary": {
+    "total_models_trained": 1,
+    "best_model": "linear_regression",
+    "feature_names": [
+      "R值",
+      "F值",
+      "M值"
+    ],
+    "model_performance": {
+      "linear_regression": {
+        "r2_score": 1.0,
+        "mae": 1.4210854715202004e-13,
+        "mse": 2.781117851915174e-26,
+        "rmse": 1.6676683878742723e-13,
+        "mape": 3.047491048709334e-14
+      }
+    },
+    "feature_importance": {
+      "linear_regression": {
+        "M值": 1.0000000000000004,
+        "F值": 5.3179682879545e-14,
+        "R值": 6.996024142584277e-16
+      }
+    },
+    "best_performance": {
+      "r2_score": 1.0,
+      "mae": 1.4210854715202004e-13,
+      "mse": 2.781117851915174e-26,
+      "rmse": 1.6676683878742723e-13,
+      "mape": 3.047491048709334e-14
+    }
+  },
+  "best_model_performance": {
+    "model_name": "linear_regression",
+    "r2_score": 1.0,
+    "mae": 1.4210854715202004e-13,
+    "rmse": 1.6676683878742723e-13,
+    "mape": 3.047491048709334e-14
+  },
+  "feature_analysis": {
+    "feature_importance": {
+      "linear_regression": {
+        "M值": 1.0000000000000004,
+        "F值": 5.3179682879545e-14,
+        "R值": 6.996024142584277e-16
+      }
+    },
+    "best_model_features": {
+      "M值": 1.0000000000000004,
+      "F值": 5.3179682879545e-14,
+      "R值": 6.996024142584277e-16
+    },
+    "feature_insights": {
+      "most_important_feature": "M值",
+      "most_important_score": 1.0000000000000004,
+      "feature_ranking": {
+        "M值": 1.0000000000000004,
+        "F值": 5.3179682879545e-14,
+        "R值": 6.996024142584277e-16
+      },
+      "feature_contribution_analysis": {
+        "M值": "消费金额贡献了100.0%的预测信息，历史消费金额是LTV的关键指标",
+        "F值": "消费频率贡献了0.0%的预测信息，频繁购买客户更有价值",
+        "R值": "最近消费时间贡献了0.0%的预测信息，客户活跃度对LTV影响显著"
+      }
+    }
+  },
+  "recommendations": [
+    "模型预测性能优秀（R² > 0.7），可用于精准营销和客户价值管理",
+    "样本量较少，建议积累更多数据以提高模型稳定性"
+  ]
+}

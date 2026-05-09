@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "platform": "Twitter",
+    "text": "Just tried the new #iPhone15 and it's absolutely amazing! The camera quality is stunning 📱 @Apple",
+    "timestamp": "2024-01-15T10:30:00Z",
+    "likes": 245,
+    "retweets": 42,
+    "hashtags": ["iPhone15", "Apple"],
+    "mentions": ["Apple"],
+    "user": "tech_enthusiast"
+  },
+  {
+    "id": 2,
+    "platform": "Twitter",
+    "text": "Terrible customer service @CompanyXYZ. Waited 2 hours for support only to be disconnected! 😤 #Fail",
+    "timestamp": "2024-01-15T14:22:00Z",
+    "likes": 89,
+    "retweets": 15,
+    "hashtags": ["Fail"],
+    "mentions": ["CompanyXYZ"],
+    "user": "frustrated_customer"
+  },
+  {
+    "id": 3,
+    "platform": "Instagram",
+    "text": "Check out our latest summer collection! 50% off everything in store. #Shopping #Deals #SummerSale",
+    "timestamp": "2024-01-16T09:15:00Z",
+    "likes": 567,
+    "hashtags": ["Shopping", "Deals", "SummerSale"],
+    "mentions": [],
+    "user": "fashion_brand"
+  },
+  {
+    "id": 4,
+    "platform": "Twitter",
+    "text": "@JohnDoe thanks for the recommendation! The noise-cancelling headphones work perfectly 👍 #HappyCustomer",
+    "timestamp": "2024-01-16T16:45:00Z",
+    "likes": 23,
+    "retweets": 3,
+    "hashtags": ["HappyCustomer"],
+    "mentions": ["JohnDoe"],
+    "user": "satisfied_buyer"
+  },
+  {
+    "id": 5,
+    "platform": "Facebook",
+    "text": "New blog post: 10 Productivity Tips That Changed My Life. Link in bio! ✨ #Productivity #SelfImprovement",
+    "timestamp": "2024-01-17T08:00:00Z",
+    "likes": 124,
+    "shares": 28,
+    "hashtags": ["Productivity", "SelfImprovement"],
+    "mentions": [],
+    "user": "productivity_guru"
+  },
+  {
+    "id": 6,
+    "platform": "Twitter",
+    "text": "Can't believe they cancelled my order without any notification! So frustrated with this company 😠",
+    "timestamp": "2024-01-17T19:30:00Z",
+    "likes": 67,
+    "retweets": 8,
+    "hashtags": [],
+    "mentions": [],
+    "user": "angry_shopper"
+  },
+  {
+    "id": 7,
+    "platform": "Instagram",
+    "text": "Beautiful sunset from my balcony today. Nature never ceases to amaze me! 🌅 #Nature #Sunset #Blessed",
+    "timestamp": "2024-01-18T18:15:00Z",
+    "likes": 892,
+    "hashtags": ["Nature", "Sunset", "Blessed"],
+    "mentions": [],
+    "user": "nature_lover"
+  },
+  {
+    "id": 8,
+    "platform": "Twitter",
+    "text": "Just launched my new podcast about entrepreneurship! First episode is live 🎙️ #Startup #Business",
+    "timestamp": "2024-01-19T11:00:00Z",
+    "likes": 156,
+    "retweets": 34,
+    "hashtags": ["Startup", "Business"],
+    "mentions": [],
+    "user": "entrepreneur_pod"
+  },
+  {
+    "id": 9,
+    "platform": "Facebook",
+    "text": "Retweet if you agree that we need better environmental policies! 🌍 Our planet deserves better #ClimateAction",
+    "timestamp": "2024-01-20T07:45:00Z",
+    "likes": 423,
+    "shares": 189,
+    "hashtags": ["ClimateAction"],
+    "mentions": [],
+    "user": "environmental_activist"
+  },
+  {
+    "id": 10,
+    "platform": "Twitter",
+    "text": "The new software update is amazing! So many useful features and the UI is much cleaner now @TechCorp",
+    "timestamp": "2024-01-20T15:20:00Z",
+    "likes": 78,
+    "retweets": 12,
+    "hashtags": [],
+    "mentions": ["TechCorp"],
+    "user": "software_developer"
+  }
+]

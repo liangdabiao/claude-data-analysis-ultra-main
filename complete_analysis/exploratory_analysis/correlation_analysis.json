@@ -1,0 +1,160 @@
+{
+  "stats_summary": {
+    "orders": {
+      "total_orders": 99441,
+      "status_distribution": {
+        "delivered": 96478,
+        "shipped": 1107,
+        "canceled": 625,
+        "unavailable": 609,
+        "invoiced": 314,
+        "processing": 301,
+        "created": 5,
+        "approved": 2
+      },
+      "date_range": {
+        "min": "2016-09-04T21:15:19",
+        "max": "2018-10-17T17:30:18"
+      }
+    },
+    "order_values": {
+      "mean": 160.57763809214924,
+      "median": 105.29,
+      "std": 220.46496927761578,
+      "min": 9.59,
+      "max": 13664.08,
+      "q25": 61.98,
+      "q75": 176.87,
+      "total": 15843553.239999998
+    },
+    "payments": {
+      "payment_types": {
+        "credit_card": 76795,
+        "boleto": 19784,
+        "voucher": 5775,
+        "debit_card": 1529,
+        "not_defined": 3
+      },
+      "installments_stats": {
+        "mean": 2.853348863176944,
+        "max": 24
+      }
+    },
+    "reviews": {
+      "score_distribution": {
+        "5": 57328,
+        "4": 19142,
+        "1": 11424,
+        "3": 8179,
+        "2": 3151
+      },
+      "avg_score": 4.08642062404257
+    },
+    "customers": {
+      "unique_customers": 99441,
+      "states": {
+        "SP": 41746,
+        "RJ": 12852,
+        "MG": 11635,
+        "RS": 5466,
+        "PR": 5045,
+        "SC": 3637,
+        "BA": 3380,
+        "DF": 2140,
+        "ES": 2033,
+        "GO": 2020
+      }
+    }
+  },
+  "patterns": {
+    "temporal_patterns": [
+      {
+        "type": "monthly_trend",
+        "description": "月度订单趋势",
+        "data": {
+          "2016-09": 4,
+          "2016-10": 324,
+          "2016-12": 1,
+          "2017-01": 800,
+          "2017-02": 1780,
+          "2017-03": 2682,
+          "2017-04": 2404,
+          "2017-05": 3700,
+          "2017-06": 3245,
+          "2017-07": 4026,
+          "2017-08": 4331,
+          "2017-09": 4285,
+          "2017-10": 4631,
+          "2017-11": 7544,
+          "2017-12": 5673,
+          "2018-01": 7269,
+          "2018-02": 6728,
+          "2018-03": 7211,
+          "2018-04": 6939,
+          "2018-05": 6873,
+          "2018-06": 6167,
+          "2018-07": 6292,
+          "2018-08": 6512,
+          "2018-09": 16,
+          "2018-10": 4
+        }
+      },
+      {
+        "type": "weekday_pattern",
+        "description": "周几订单分布",
+        "data": {
+          "Monday": 16196,
+          "Tuesday": 15963,
+          "Wednesday": 15552,
+          "Thursday": 14761,
+          "Friday": 14122,
+          "Sunday": 11960,
+          "Saturday": 10887
+        }
+      }
+    ],
+    "category_patterns": [
+      {
+        "type": "payment_preference",
+        "description": "支付方式偏好",
+        "data": {
+          "credit_card": 73.92237645110987,
+          "boleto": 19.043952024334367,
+          "voucher": 5.558978110621258,
+          "debit_card": 1.4718056330978189,
+          "not_defined": 0.0028877808366863677
+        }
+      }
+    ],
+    "behavioral_patterns": []
+  },
+  "correlations": {
+    "strong_correlations": [],
+    "weak_correlations": [],
+    "insights": [
+      {
+        "variable1": "review_score",
+        "variable2": "total_amount",
+        "correlation": -0.0466439227564543,
+        "interpretation": "订单金额与评分的相关性"
+      }
+    ]
+  },
+  "anomalies": {
+    "outliers": [
+      {
+        "type": "high_value_orders",
+        "count": 7775,
+        "threshold": 349.20500000000004,
+        "max_value": 13664.08
+      }
+    ],
+    "unusual_patterns": [
+      {
+        "type": "high_installment_payments",
+        "count": 185,
+        "max_installments": 24
+      }
+    ]
+  }
+}
