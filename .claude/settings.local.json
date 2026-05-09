@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Skill(attribution-analysis-modeling)"
+      "Skill(attribution-analysis-modeling)",
+      "Bash(python -c ' *)",
+      "Bash(python generated_code/check_data.py)",
+      "Bash(python generated_code/olist_full_analysis.py)"
     ]
   }
 }
