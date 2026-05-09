@@ -1,6 +1,9 @@
 # Claude Data Analysis Skills
 
-基于 Trae Skill 架构的智能数据分析平台。通过模块化的 Skills 实现完整的数据分析工作流。
+基于 Claude Skill 架构的智能数据分析平台。提供两套完整的技能体系：
+
+1. **通用数据分析技能** - 6阶段完整分析流程
+2. **互联网数据分析技能** - 7个专业分析模块 + 1个入口技能
 
 ---
 
@@ -15,19 +18,78 @@ data_storage/
 ├── olist_orders_dataset.csv
 ├── olist_customers_dataset.csv
 ├── olist_order_items_dataset.csv
+├── olist_order_reviews_dataset.csv
 └── house.csv
 ```
 
 ### 2. 调用 Skills 分析
 
+#### 方式1: 互联网数据分析（推荐）
 ```bash
-# 方式1: 直接使用 Skill
+# 通过入口技能，一站式互联网分析
+@internet-data-analysis 对 olist 电商数据进行全面分析
+
+# 或直接使用专业技能
+@ltv-predictor 进行客户生命周期价值分析
+@content-analysis 分析用户评论情感
+@funnel-analysis 分析转化漏斗
+@growth-model-analyzer 制定增长策略
+@ab-testing-analyzer 设计AB测试
+@attribution-analysis-modeling 渠道归因分析
+@data-exploration-visualization 探索性分析
+```
+
+#### 方式2: 通用数据分析
+```bash
+# 直接使用 Skill
 @data-explorer 分析 olist 电商数据
 @visualization-specialist 创建销售可视化
 @report-writer 生成分析报告
 
-# 方式2: 通过主 Skill (支持高级分析模式)
+# 通过主 Skill (支持高级分析模式)
 @data-analysis 对 olist数据进行 statistical 分析
+```
+
+---
+
+## 🌐 互联网分析模式 (Internet Analysis Mode)
+
+**重要功能**：专为互联网业务场景设计的专业技能体系，提供针对电商、内容、增长等场景的深度分析能力。
+
+### 为什么使用互联网分析模式？
+
+- **场景聚焦**：针对互联网业务特点设计
+- **专业深度**：提供 LTV 预测、归因分析、AB 测试等专业能力
+- **灵活组合**：可单独使用，也可通过入口技能协调组合
+- **开箱即用**：提供 templates/、guide/、examples/ 完整配套
+
+### 互联网分析技能列表
+
+| Skill | 核心能力 | 适用场景 |
+|-------|---------|----------|
+| **internet-data-analysis** | 入口协调技能 | 需要综合分析时使用 |
+| **ltv-predictor** | 客户生命周期价值预测 | 客户价值分层、获客成本优化 |
+| **content-analysis** | 文本内容分析 | 评论情感分析、主题挖掘 |
+| **funnel-analysis** | 转化漏斗分析 | 流失节点识别、转化率优化 |
+| **growth-model-analyzer** | 增长策略分析 | AARRR 框架、Uplift 建模 |
+| **ab-testing-analyzer** | A/B测试设计与分析 | 实验设计、统计检验 |
+| **attribution-analysis-modeling** | 渠道归因分析 | 营销渠道评估、预算优化 |
+| **data-exploration-visualization** | 数据探索与可视化 | 基础分析、数据概览 |
+
+### 互联网分析技能使用示例
+
+```bash
+# 综合电商分析（入口技能自动协调）
+@internet-data-analysis 对 olist 数据进行全面分析
+
+# 专项分析 - 只做 LTV
+@ltv-predictor 分析 olist 客户生命周期价值
+
+# 专项分析 - 只做评论分析
+@content-analysis 分析 olist 用户评论
+
+# 专项分析 - 只做增长策略
+@growth-model-analyzer 制定 olist 增长策略
 ```
 
 ---
@@ -169,8 +231,41 @@ data_storage/
 
 ## 📦 Skills 架构
 
+项目包含两套完整的技能体系：
+
+### 体系 1: 互联网分析技能（新增）
+
 ```
 .trae/skills/
+├── internet-data-analysis/       # 入口技能（协调者）
+├── ab-testing-analyzer/         # AB测试分析
+├── attribution-analysis-modeling/# 归因分析建模
+├── content-analysis/            # 内容分析（NLP）
+├── data-exploration-visualization/# 数据探索与可视化
+├── funnel-analysis/             # 漏斗分析
+├── growth-model-analyzer/       # 增长模型分析
+└── ltv-predictor/               # LTV预测
+```
+
+#### 各互联网分析 Skill 功能
+
+| Skill | 核心功能 | 配套资源 |
+|-------|---------|---------|
+| **internet-data-analysis** | 统筹全部互联网分析技能 | SKILL.md |
+| **ab-testing-analyzer** | 实验设计、样本量计算、统计检验 | templates/ + guide/ + examples/ |
+| **attribution-analysis-modeling** | 首次/末次/线性/马尔可夫/Shapley值归因 | templates/ + guide/ + examples/ |
+| **content-analysis** | 情感分析、关键词提取、主题建模 | templates/ + guide/ + examples/ |
+| **data-exploration-visualization** | 数据概览、分布分析、可视化 | templates/ + guide/ + examples/ |
+| **funnel-analysis** | 漏斗分析、流失节点识别、转化优化 | templates/ + guide/ + examples/ |
+| **growth-model-analyzer** | AARRR框架、Uplift建模、增长策略 | templates/ + guide/ + examples/ |
+| **ltv-predictor** | RFM分群、LTV预测、价值分层 | templates/ + guide/ + examples/ |
+
+---
+
+### 体系 2: 通用数据分析技能（保留）
+
+```
+.Claude/skills/
 ├── data-analysis/           # 主 Skill（协调者）
 ├── data-explorer/         # 数据分析
 ├── visualization-specialist/  # 数据可视化
@@ -180,7 +275,7 @@ data_storage/
 └── quality-assurance     # 质量保证
 ```
 
-### 各 Skill 功能说明
+### 各通用分析 Skill 功能说明
 
 ### 1. data-analysis (主 Skill)
 
@@ -324,7 +419,7 @@ data_storage/
 ├── visualizations/         # 可视化图表输出
 ├── generated_code/        # 生成的代码输出
 ├── .claude/               # 原 Claude Agent 配置（保留）
-├── .trae/                 # Trae Skills 配置
+├── .Claude/                 # 通用数据分析 Skills 配置
 │   └── skills/
 │       ├── data-analysis/
 │       ├── data-explorer/
@@ -333,7 +428,39 @@ data_storage/
 │       ├── code-generator/
 │       ├── hypothesis-generator/
 │       └── quality-assurance/
-└── README.md
+├── .trae/                  # 互联网分析 Skills 配置（新增）
+│   └── skills/
+│       ├── internet-data-analysis/
+│       ├── ab-testing-analyzer/
+│       │   ├── templates/      # 报告模板
+│       │   ├── guide/          # 操作指南
+│       │   └── examples/       # 示例代码
+│       ├── attribution-analysis-modeling/
+│       │   ├── templates/
+│       │   ├── guide/
+│       │   └── examples/
+│       ├── content-analysis/
+│       │   ├── templates/
+│       │   ├── guide/
+│       │   └── examples/
+│       ├── data-exploration-visualization/
+│       │   ├── templates/
+│       │   ├── guide/
+│       │   └── examples/
+│       ├── funnel-analysis/
+│       │   ├── templates/
+│       │   ├── guide/
+│       │   └── examples/
+│       ├── growth-model-analyzer/
+│       │   ├── templates/
+│       │   ├── guide/
+│       │   └── examples/
+│       └── ltv-predictor/
+│           ├── templates/
+│           ├── guide/
+│           └── examples/
+├── CLAUDE.md               # 项目详细文档
+└── README.md               # 本文件
 ```
 
 ---
@@ -387,7 +514,39 @@ avg_amount = sum(amounts) / len(amounts)  # 正确！
 
 ## 📖 完整使用示例
 
-### 示例 1: 基础 EDA
+### 示例 A: 互联网数据分析 - 电商综合分析
+
+```
+用户: 对 olist 电商数据进行全面互联网分析
+
+调用: @internet-data-analysis
+输出:
+1. 数据探索 (@data-exploration-visualization)
+2. 漏斗分析 (@funnel-analysis)
+3. LTV 预测 (@ltv-predictor)
+4. 内容分析 (@content-analysis)
+5. 增长策略 (@growth-model-analyzer)
+```
+
+### 示例 B: 互联网数据分析 - 专项分析
+
+```
+用户: 分析 olist 客户生命周期价值
+
+调用: @ltv-predictor
+输出: RFM 分群、LTV 分层、价值预测、策略建议
+```
+
+```
+用户: 分析 olist 用户评论
+
+调用: @content-analysis
+输出: 情感分析、关键词、主题建模、用户洞察
+```
+
+---
+
+### 示例 1: 基础 EDA（通用分析）
 
 ```
 用户: 分析 house.csv 数据

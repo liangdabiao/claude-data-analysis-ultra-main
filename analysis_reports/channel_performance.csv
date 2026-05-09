@@ -1,0 +1,8 @@
+channel,touchpoints,users_reached,total_cost,avg_cost_per_touch,conversions_as_last,conversions_as_first,conversion_value_as_last,cpl,roi,reach_efficiency
+paid_search,20,17,935,46.75,5,0,11800,187.0,1162.0320855614973,85.0
+social_media,25,16,697,27.88,6,0,7550,116.16666666666667,983.2137733142038,64.0
+email,25,19,362,14.48,6,0,5500,60.333333333333336,1419.3370165745855,76.0
+content_marketing,18,14,385,21.38888888888889,3,0,3600,128.33333333333334,835.0649350649351,77.77777777777779
+affiliate,2,2,75,37.5,0,0,0,inf,-100.0,100.0
+display,1,1,25,25.0,0,0,0,inf,-100.0,100.0
+organic_search,4,4,0,0.0,0,0,0,inf,0.0,100.0
