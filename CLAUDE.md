@@ -60,7 +60,7 @@ data_storage/
 
 ### 互联网分析技能（新增）
 ```
-.trae/skills/
+.claude/skills/
 ├── internet-data-analysis/           # 入口技能（协调者）
 ├── ab-testing-analyzer/             # AB测试分析
 ├── attribution-analysis-modeling/    # 归因分析建模

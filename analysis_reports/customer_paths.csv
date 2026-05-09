@@ -1,0 +1,21 @@
+user_id,path,path_length,conversion_value,duration_days,total_cost
+USER001,paid_search → social_media → email,3,1000,2.9479166666666665,90
+USER002,paid_search → social_media,2,800,6.069444444444445,120
+USER003,organic_search → content_marketing → content_marketing → paid_search,4,2000,6.072916666666667,90
+USER004,social_media → email → social_media → paid_search → email,5,500,9.614583333333334,115
+USER005,content_marketing → social_media → paid_search → email → content_marketing,5,1200,7.916666666666667,113
+USER006,paid_search → organic_search → email,3,600,4.322916666666667,85
+USER007,social_media → content_marketing → email → social_media,4,900,10.03125,101
+USER008,paid_search → social_media → email → content_marketing → social_media,5,750,7.993055555555555,137
+USER009,organic_search → paid_search → email → content_marketing → paid_search,5,3000,7.875,158
+USER010,social_media → email,2,400,6.114583333333333,105
+USER011,email → content_marketing → paid_search → social_media → email → paid_search → content_marketing,7,1100,12.114583333333334,212
+USER012,affiliate → paid_search → social_media → email,4,800,5.75,138
+USER013,display → social_media → paid_search → email,4,2200,6.083333333333333,118
+USER014,social_media → email → content_marketing → social_media,4,1600,5.666666666666667,93
+USER015,email → paid_search,2,2200,6.041666666666667,92
+USER016,paid_search → social_media → email → content_marketing → paid_search,5,2800,8.135416666666666,147
+USER017,organic_search → content_marketing → social_media → paid_search → email → social_media,6,1400,10.333333333333334,125
+USER018,email → social_media → content_marketing → paid_search,4,1800,9.854166666666666,146
+USER019,affiliate → paid_search → email → social_media → content_marketing,5,1300,7.739583333333333,158
+USER020,email → social_media → content_marketing → paid_search → email → social_media,6,2100,10.041666666666666,136

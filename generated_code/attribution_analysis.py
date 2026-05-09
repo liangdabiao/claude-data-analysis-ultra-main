@@ -651,7 +651,7 @@ ax4.legend()
 
 # 图5: 渠道转移热力图
 ax5 = axes[1, 1]
-trans_matrix = pd.DataFrame(0, index=all_channels, columns=all_channels)
+trans_matrix = pd.DataFrame(0.0, index=all_channels, columns=all_channels)
 for from_ch in transitions:
     total_from = sum(transitions[from_ch].values())
     for to_ch, cnt in transitions[from_ch].items():
