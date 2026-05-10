@@ -23,7 +23,8 @@
       "Bash(ls -la output/)",
       "Bash(ls data_storage/)",
       "Bash(ls examples/)",
-      "Bash(python output/06-ecommerce-deep-dive/code/ecommerce_deep_dive.py)"
+      "Bash(python output/06-ecommerce-deep-dive/code/ecommerce_deep_dive.py)",
+      "Bash(python output/07-sample-data/code/sample_data_analysis.py)"
     ]
   }
 }
