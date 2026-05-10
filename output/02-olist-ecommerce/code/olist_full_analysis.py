@@ -21,8 +21,8 @@ plt.rcParams['figure.dpi'] = 150
 DATA = './data_storage/'
 # Skip geolocation (1M rows, causes memory issues)
 SKIP_FILES = ['olist_geolocation_dataset']
-OUT_REPORTS = './analysis_reports/'
-OUT_VIZ = './visualizations/'
+OUT_REPORTS = './output/02-olist-ecommerce/reports/'
+OUT_VIZ = './output/02-olist-ecommerce/visualizations/'
 os.makedirs(OUT_REPORTS, exist_ok=True)
 os.makedirs(OUT_VIZ, exist_ok=True)
 

@@ -4,7 +4,26 @@
       "Skill(attribution-analysis-modeling)",
       "Bash(python -c ' *)",
       "Bash(python generated_code/check_data.py)",
-      "Bash(python generated_code/olist_full_analysis.py)"
+      "Bash(python generated_code/olist_full_analysis.py)",
+      "Skill(data-exploration-visualization)",
+      "Bash(python generated_code/shein_explore.py)",
+      "Bash(python generated_code/explore_all_ecomm.py)",
+      "Bash(mv analysis_reports/attribution_deep_analysis_report.md output/01-attribution-analysis/reports/)",
+      "Bash(mv analysis_reports/attribution_results.csv output/01-attribution-analysis/reports/)",
+      "Bash(mv analysis_reports/channel_performance.csv output/01-attribution-analysis/reports/)",
+      "Bash(mv analysis_reports/customer_paths.csv output/01-attribution-analysis/reports/)",
+      "Bash(mv visualizations/attribution_dashboard.png output/01-attribution-analysis/visualizations/)",
+      "Bash(sed -i \"s|./analysis_reports/|./output/02-olist-ecommerce/reports/|g\" output/02-olist-ecommerce/code/olist_full_analysis.py)",
+      "Bash(sed -i \"s|./visualizations/|./output/02-olist-ecommerce/visualizations/|g\" output/02-olist-ecommerce/code/olist_full_analysis.py)",
+      "Bash(sed -i \"s|OUT_REPORTS = './analysis_reports/'|OUT_REPORTS = './output/02-olist-ecommerce/reports/'|\" output/02-olist-ecommerce/code/olist_full_analysis.py)",
+      "Bash(sed -i \"s|OUT_VIZ = './visualizations/'|OUT_VIZ = './output/02-olist-ecommerce/visualizations/'|\" output/02-olist-ecommerce/code/olist_full_analysis.py)",
+      "Bash(sed -i \"s|OUT_R = './analysis_reports/'|OUT_R = './output/03-datab-orders/reports/'|\" output/03-datab-orders/code/dataB_analysis.py)",
+      "Bash(ls -la .claude/skills/)",
+      "Bash(ls -la .trae/skills/)",
+      "Bash(ls -la output/)",
+      "Bash(ls data_storage/)",
+      "Bash(ls examples/)",
+      "Bash(python output/06-ecommerce-deep-dive/code/ecommerce_deep_dive.py)"
     ]
   }
 }

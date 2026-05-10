@@ -447,8 +447,8 @@ print(f"\n💰 归因贡献金额对比 ($):")
 print(comparison_df.round(0).to_string())
 
 # 保存归因结果
-comparison_df.to_csv('./analysis_reports/attribution_results.csv')
-channel_perf_df.to_csv('./analysis_reports/channel_performance.csv', index=False)
+comparison_df.to_csv('./output/01-attribution-analysis/reports/attribution_results.csv')
+channel_perf_df.to_csv('./output/01-attribution-analysis/reports/channel_performance.csv', index=False)
 
 # ========== 6. 路径分析 ==========
 print("\n" + "=" * 70)
@@ -685,9 +685,9 @@ ax6.legend(loc='upper left')
 ax6_twin.legend(loc='upper right')
 
 plt.tight_layout(rect=[0, 0, 1, 0.96])
-plt.savefig('./visualizations/attribution_dashboard.png', dpi=150, bbox_inches='tight')
+plt.savefig('./output/01-attribution-analysis/visualizations/attribution_dashboard.png', dpi=150, bbox_inches='tight')
 plt.close()
-print("  ✅ 仪表板已保存: ./visualizations/attribution_dashboard.png")
+print("  ✅ 仪表板已保存: ./output/01-attribution-analysis/visualizations/attribution_dashboard.png")
 
 # ========== 图2: 渠道角色雷达图 ==========
 fig2, ax = plt.subplots(figsize=(10, 10), subplot_kw=dict(projection='polar'))
@@ -715,9 +715,9 @@ ax.set_xticks(angles[:-1])
 ax.set_xticklabels(categories, fontsize=10)
 ax.set_title('各渠道在六种归因模型中的表现 (%)', fontsize=14, fontweight='bold', y=1.08)
 ax.legend(loc='upper right', bbox_to_anchor=(1.3, 1.1), fontsize=8)
-plt.savefig('./visualizations/channel_radar.png', dpi=150, bbox_inches='tight')
+plt.savefig('./output/01-attribution-analysis/visualizations/channel_radar.png', dpi=150, bbox_inches='tight')
 plt.close()
-print("  ✅ 雷达图已保存: ./visualizations/channel_radar.png")
+print("  ✅ 雷达图已保存: ./output/01-attribution-analysis/visualizations/channel_radar.png")
 
 # ========== 图3: 预算优化桑基图（简化版 - 堆叠柱） ==========
 fig3, axes3 = plt.subplots(1, 2, figsize=(16, 7))
@@ -753,9 +753,9 @@ for bar, val in zip(bars, stage_values[::-1]):
                   f'{val}', va='center', fontsize=11, fontweight='bold')
 
 plt.tight_layout()
-plt.savefig('./visualizations/budget_optimization.png', dpi=150, bbox_inches='tight')
+plt.savefig('./output/01-attribution-analysis/visualizations/budget_optimization.png', dpi=150, bbox_inches='tight')
 plt.close()
-print("  ✅ 预算优化图已保存: ./visualizations/budget_optimization.png")
+print("  ✅ 预算优化图已保存: ./output/01-attribution-analysis/visualizations/budget_optimization.png")
 
 # ========== 保存路径数据 ==========
 paths_data = []
@@ -769,7 +769,7 @@ for uid, p in conv_paths.items():
         'total_cost': p['total_cost']
     })
 
-pd.DataFrame(paths_data).to_csv('./analysis_reports/customer_paths.csv', index=False)
+pd.DataFrame(paths_data).to_csv('./output/01-attribution-analysis/reports/customer_paths.csv', index=False)
 
 # ========== 10. 生成综合分析报告 ==========
 report = f"""# 营销渠道多模型归因分析报告
@@ -932,10 +932,10 @@ report += f"""
 *报告由 Claude 归因分析技能自动生成*
 """
 
-with open('./analysis_reports/attribution_deep_analysis_report.md', 'w', encoding='utf-8') as f:
+with open('./output/01-attribution-analysis/reports/attribution_deep_analysis_report.md', 'w', encoding='utf-8') as f:
     f.write(report)
 
-print("\n  ✅ 分析报告已保存: ./analysis_reports/attribution_deep_analysis_report.md")
+print("\n  ✅ 分析报告已保存: ./output/01-attribution-analysis/reports/attribution_deep_analysis_report.md")
 
 print("\n" + "=" * 70)
 print("  ✅ 全部分析完成！")
